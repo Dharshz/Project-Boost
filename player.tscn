@@ -11,6 +11,8 @@ height = 1.3319
 axis_lock_linear_z = true
 axis_lock_angular_x = true
 axis_lock_angular_y = true
+max_contacts_reported = 10
+contact_monitor = true
 linear_damp = 1.0
 angular_damp = 3.0
 script = ExtResource("1_odebq")
@@ -22,3 +24,5 @@ mesh = SubResource("CylinderMesh_8csi6")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.514071, 0)
 shape = SubResource("CylinderShape3D_xyyia")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

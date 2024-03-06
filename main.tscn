@@ -29,7 +29,7 @@ albedo_color = Color(0.176471, 0.960784, 0.172549, 1)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_86ra8")
 
-[node name="Floor" type="CSGBox3D" parent="."]
+[node name="Floor" type="CSGBox3D" parent="." groups=["Floor"]]
 transform = Transform3D(10.5051, 0, 0, 0, 1.69146, 0, 0, 0, 2.23007, 0, -0.406412, 0)
 material_override = SubResource("StandardMaterial3D_o2rog")
 use_collision = true
@@ -40,11 +40,11 @@ material_override = SubResource("StandardMaterial3D_vl3d1")
 use_collision = true
 size = Vector3(0.862518, 1, 1.52747)
 
-[node name="LandingPad" type="CSGBox3D" parent="."]
-transform = Transform3D(2.35168, 0, 0, 0, 1, 0, 0, 0, 1.38534, 2.68357, 0.650648, 0.0894012)
+[node name="LandingPad" type="CSGBox3D" parent="." groups=["Goal"]]
+transform = Transform3D(2.35168, 0, 0, 0, 1, 0, 0, 0, 1.38534, 2.39962, 0.650648, -0.0426306)
 material_override = SubResource("StandardMaterial3D_yq2mi")
 use_collision = true
-size = Vector3(0.545349, 1, 1)
+size = Vector3(0.786835, 1, 1.48334)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004, 2.269, 5.94483)
