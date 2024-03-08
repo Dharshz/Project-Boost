@@ -1,3 +1,7 @@
-res://player.tscn
 res://main.tscn
+res://LandingPad.gd
 res://player.gd
+res://player.tscn
+res://level/level.tscn
+res://level/level_1.tscn
+res://level/level_2.tscn
