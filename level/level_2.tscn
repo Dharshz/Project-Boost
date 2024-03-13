@@ -56,7 +56,7 @@ material_override = SubResource("StandardMaterial3D_yq2mi")
 use_collision = true
 size = Vector3(0.786835, 1, 1.48334)
 script = ExtResource("1_fvvr5")
-file_path = "res://main.tscn"
+file_path = "res://level/level_3.tscn"
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.004, 2.269, 5.94483)

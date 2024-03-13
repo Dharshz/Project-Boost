@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://blaxrb8ri521x"]
+
+[sub_resource type="GDScript" id="GDScript_4o2ot"]
+script/source = "extends AnimatableBody3D
+
+@export var distance: Vector3
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	var tween = get_tree().create_tween()
+	tween.tween_property(self, \"global_position\", global_position + distance, 6)
+	tween.tween_property(self, \"global_position\", global_position, 6)
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_da7k7"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_cmmj3"]
+
+[node name="Obstacle" type="AnimatableBody3D"]
+script = SubResource("GDScript_4o2ot")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("CapsuleMesh_da7k7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_cmmj3")

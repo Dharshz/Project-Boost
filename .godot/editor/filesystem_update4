@@ -6,3 +6,4 @@ res://level/level.tscn
 res://level/level_1.tscn
 res://level/level_2.tscn
 res://level/obstacle.tscn
+res://player.gd
