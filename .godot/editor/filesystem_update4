@@ -1,9 +1,9 @@
-res://level/level_3.tscn
-res://moving_hazard.tscn
-res://moving_hazard.gd
 res://player.tscn
+res://player.gd
 res://level/level.tscn
 res://level/level_1.tscn
 res://level/level_2.tscn
 res://level/obstacle.tscn
-res://player.gd
+res://level/level_3.tscn
+res://moving_hazard.tscn
+res://booster_particles.tscn
