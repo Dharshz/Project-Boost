@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://LandingPad.gd" id="1_1735p"]
 [ext_resource type="PackedScene" uid="uid://dqtucakjhdcq3" path="res://player.tscn" id="2_c12ip"]
-[ext_resource type="PackedScene" uid="uid://cvcynsmhokfc8" path="res://moving_hazard.tscn" id="3_m1saq"]
+[ext_resource type="PackedScene" uid="uid://cvcynsmhokfc8" path="res://Particles/moving_hazard.tscn" id="3_m1saq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_26m35"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)

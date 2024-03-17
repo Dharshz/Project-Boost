@@ -1,5 +1,4 @@
 res://player.tscn
-res://player.gd
 res://level/level.tscn
 res://level/level_1.tscn
 res://level/level_2.tscn
@@ -7,3 +6,7 @@ res://level/obstacle.tscn
 res://level/level_3.tscn
 res://moving_hazard.tscn
 res://booster_particles.tscn
+res://player.gd
+res://Particles/moving_hazard.tscn
+res://Particles/success_particles.tscn
+res://Particles/booster_particles.tscn

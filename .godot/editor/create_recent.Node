@@ -1,5 +1,5 @@
-AudioStreamPlayer
 MeshInstance3D
+AudioStreamPlayer
 AnimatableBody3D
 CollisionShape3D
 CSGBox3D

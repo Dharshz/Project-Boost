@@ -8,6 +8,8 @@ extends RigidBody3D
 @onready var success_audio: AudioStreamPlayer = $SuccessAudio
 @onready var rocket_audio: AudioStreamPlayer = $RocketAudio
 @onready var booster_particles: GPUParticles3D = $BoosterParticles
+@onready var explosion_particles: GPUParticles3D = $ExplosionParticles
+@onready var success_particles: GPUParticles3D = $SuccessParticles
 
 
 var is_transitioning: bool = false
@@ -38,12 +40,12 @@ func _on_body_entered(body: Node) -> void:
 	if is_transitioning == false:
 		if "Goal" in body.get_groups():
 			on_complete(body.file_path)
-		if "@onready var rocket_audio: AudioStreamPlayer = $RocketAudio
-" in body.get_groups():
+		if "Floor" in body.get_groups():
 			on_crash()
 
 func on_complete(path):
 	set_process(false)
+	success_particles.emitting = true
 	success_audio.play()
 	is_transitioning = true
 	var tween = create_tween()
@@ -52,6 +54,7 @@ func on_complete(path):
 	
 func on_crash():
 	set_process(false)
+	explosion_particles.emitting = true
 	explosion_audio.play()
 	is_transitioning = true
 	var tween = create_tween()
